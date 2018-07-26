@@ -170,7 +170,7 @@ public class TagExtractorFrame extends JFrame
     {
         tags.setText("");
         wordCount.entrySet().stream().sorted(Map.Entry.comparingByValue().reversed())
-                .limit(10).forEach(entry -> 
+                .limit(11).forEach(entry -> 
                 {
                     tags.append(((Map.Entry)entry).getKey() + " : " + ((Map.Entry)entry).getValue() + "\n");
                 });
